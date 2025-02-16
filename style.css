@@ -1,0 +1,277 @@
+* {
+    font-size: 30px;
+}
+
+/* Custom Styling */
+body {
+    font-family: 'VT323', monospace;
+    font-size: 20px; /* Adjust size for better readability */
+    background-color: #0f0f0f; /* Dark background for hacker theme */
+    color: #00ff00; /* Green text like old-school terminals */
+}
+
+.container {
+    max-width: 99%; /* Adjust from default (1140px) */
+    margin: auto;
+}
+
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?technology') center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+        
+.hero p {
+    font-size: 1.2rem;
+}
+        
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.initial-name {
+	color:red;
+}			
+		
+#about img {
+    max-width: 100%;
+	height: auto;
+	border-radius: 10%;
+    padding-left: 50px;
+}
+		
+.about-details {
+	color: white;
+}
+
+#welcome-text {
+    font-size: 2rem;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    font-family: "VT323", monospace;
+    text-align: center;
+    display: inline-block;
+    min-width: 360px; /* Set width based on text size */
+    min-height: 40px; /* Prevents shifting */
+    white-space: nowrap; /* Keeps text in one line */
+}
+
+
+/*
+ {
+	height: 30px;
+	width: 10px;
+	border-radius: 10px;
+	color: #00ff00;
+	background-color: gray;
+	text-decoration: none;
+	font-size: 25px;
+	padding: 5px;
+}
+		
+..hire-me-btn:hover {
+	color: red;
+}
+
+
+8/
+
+
+
+/* From Uiverse.io by SelfMadeSystem */ 
+/* Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor things */
+
+.hire-me-btn {
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 3px;
+    isolation: isolate;
+    color: #00ff00;
+  }
+
+  .hire-me-btn:hover {
+    color: red;
+  }
+  
+  .hire-me-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    background-size: 25% 100%;
+    animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+    animation-play-state: paused;
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out;
+  }
+  
+  .hire-me-btn:hover::before {
+    animation-play-state: running;
+    transition-duration: 0.75s;
+    translate: 0% 0%;
+  }
+  
+  @keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+    to {
+      transform: translateX(-25%);
+    }
+  }
+  
+  .hire-me-btn span {
+    position: relative;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    background: #000;
+    border-radius: 3px;
+    height: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+		
+.form-control {
+	opacity: 0.5;
+    color: #0f0f0f;
+}
+
+            /*navigation bar */
+
+.navbar {
+    padding: 1px; /* Add padding for better spacing */
+    font-size: 10px;
+}
+
+.name-ko {
+    margin-left: 15px; /* Small left margin */
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px; /* Space between menu items */
+    font-size: 1rem;
+    color: #ccc !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00ff00 !important; /* Green hover effect */
+}
+
+/* color green eith */
+.name-ko .name-ko-end-green {
+    color: #00ff00;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SOCIAL ICONSSSSS */
+
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.custom-button .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.custom-button:hover .icon {
+    transform: scale(1.2);
+}
+
+/* Specific styles for different platforms */
+.facebook {
+    background: #24292e;
+    color: white;
+}
+.facebook:hover {
+    background: #1258C9;
+}
+
+.linkedin {
+    background: #24292e;
+    color: white;
+}
+.linkedin:hover {
+    background: #005983;
+}
+
+.github {
+    background: #24292e;
+    color: white;
+}
+.github:hover {
+    background: #1B1F23;
+}
+.instagram {
+    background: #24292e;
+    color: white;
+}
+.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    filter: brightness(1.2);
+}
+
+.email a{
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-top: -90px;
+    margin-bottom: -150px;
+}
