@@ -162,20 +162,32 @@
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center">Contact Me</h2>
-            <form class="mt-4">
+            <form class="mt-4" name="submit-to-google-sheet">
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" placeholder="Your Name" required>
+                        <input name="Name" type="text" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
+                        <input name="Email" type="email" class="form-control" placeholder="Your Email" required>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    <textarea name="Message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                <!-- From Uiverse.io by eirikvold --> 
+                <button class="send-mess">
+                    <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                    </div>
+                    </div>
+                    <span>Send</span>
+                </button>
             </form>
+            <span id="msg"></span>
             <br>
             <p class="email">
                 Email:  
