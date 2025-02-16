@@ -1,7 +1,7 @@
 /////////////////////////////////FOR LETTER BY LETTER TYPING EFFECT////////////////////////////////////
 
 document.addEventListener("DOMContentLoaded", function () {
-    const text = "Keith";
+    const text = "&lt;Keith&sol;&gt;";
     const speed = 100; // Speed of typing (in milliseconds)
     const delay = 1000; // Delay before repeating (1 second)
     let index = 0;
