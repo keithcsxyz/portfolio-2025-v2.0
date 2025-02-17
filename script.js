@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         msg.innerHTML = "Thanks for reaching out. I'll get back to you soon."
         setTimeout(function(){
             msg.innerHTML = ""
-        }, 5000)
+        }, 5000) //aftyer 5 seconds mnawawara
         form.reset()
       })
       .catch(error => console.error('Error!', error.message))
@@ -56,3 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /////////////////////////////////////////
+
+
+
+
+
+//////////////////COPY NUMBERRRR/////////////
+    function copyToClipboard(number) {
+        navigator.clipboard.writeText(number);
+        alert("Copied: " + number);
+    }
+
+///////////////////////////////////////
