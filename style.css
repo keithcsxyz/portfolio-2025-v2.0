@@ -51,7 +51,8 @@ opacity: 0.9;
 
 .initial-name {
 	color:red;
-}			
+}
+
 		
 #about img {
     max-width: 90%;
@@ -64,6 +65,9 @@ opacity: 0.9;
 		
 .about-details {
 	color: white;
+    border: #00ff00 3px solid;
+    border-radius: 60px;
+    padding: 4%;
 }
 
 #welcome-text {
@@ -72,9 +76,7 @@ opacity: 0.9;
     text-shadow: 0 0 10px #00ff00;
     font-family: "VT323", monospace;
     text-align: center;
-    display: inline-block;
-    min-width: 360px; /* Set width based on text size */
-    min-height: 40px; /* Prevents shifting */
+    height: 50px;
     white-space: nowrap; /* Keeps text in one line */
 }
 
@@ -166,13 +168,6 @@ so that it is smooth among other more minor things */
 
 
 
-
-
-
-
-
-
-
 		
 .form-control {
 	opacity: 0.5;
@@ -259,6 +254,7 @@ so that it is smooth among other more minor things */
     font-size: 18px;
     transition: 0.3s;
     position: relative;
+    border: #417941 1px solid; 
 }
 
 .custom-button .icon {
