@@ -68,3 +68,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 ///////////////////////////////////////
+
+
+
+
+
+///////see more/////////
+    document.getElementById("seeMoreBtn").addEventListener("click", function () {
+        let hiddenProjects = document.querySelectorAll(".more-projects");
+        hiddenProjects.forEach(project => {
+            project.classList.toggle("d-none"); // Show/Hide projects
+        });
+
+        // Change button text
+        if (this.innerText === "See More") {
+            this.innerText = "See Less";
+        } else {
+            this.innerText = "See More";
+        }
+    });
