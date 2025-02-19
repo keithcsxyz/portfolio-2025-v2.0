@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="portfolio ni keith renz">
     <meta name="author" content="keith renz dao romblon">
-    <meta name="description" content="Welcome to my personal portfolio. I am Keith Renz Dao Romblon, a second-year computer science student showcasing my projects, skills, and services.">
     <meta name="keywords" content="keith renz dao romblon, portfolio, website, computer science, student, programming, html, css, javascript, js">
     <title>Keith Portfolio</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-	<link rel="icon" href="imgs/icon.png">
-	
+    <link rel="icon" href="imgs/icon.png">
     
 </head>
 <body>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container d-flex justify-content-between align-items-center py-1 px-1">
@@ -37,6 +34,7 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#socials">Socials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
@@ -112,60 +110,117 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
 
-<!-- Socials Section -->
-<section id="socials" class="py-5">
-    <div class="container">
-        <br>
-        <h2 class="text-center mb-4">Socials</h2>
-        <div class="row justify-content-center g-3">  
-            
-            <!-- Facebook -->
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <a href="https://www.facebook.com/rnzrmbln/" target="_blank" class="custom-button facebook">
-                    <span >Facebook</span>
-                    <svg class="icon" viewBox="0 0 16 16">
-                        <path d="M8 0a8 8 0 0 0-1.25 15.93V10.5H5V8h1.75V6.25c0-1.64.98-2.55 2.44-2.55.7 0 1.43.12 1.43.12v1.57h-.81c-.8 0-1.06.49-1.06 1v1.61h1.81l-.29 2.5h-1.52v5.43A8 8 0 0 0 8 0z"/>
-                    </svg>
-                </a>
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">My Projects</h2>
+            <div class="row g-3 g-lg-4"> <!-- Use 'g-3' for small screens, 'g-lg-4' for large -->
+                <!-- Always Visible Projects -->
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coming Soon.......</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coming Soon.......</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Hidden Projects -->
+                <div class="col-md-6 d-none more-projects" data-aos="fade-up">
+                    <div class="card">
+                        <img src="project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coming Soon.......</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none more-projects" data-aos="fade-up">
+                    <div class="card">
+                        <img src="project4.jpg" class="card-img-top" alt="Project 4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coming Soon.......</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- LinkedIn -->
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <a href="https://ph.linkedin.com/in/keith-renz-d-romblon-3bb400343" target="_blank" class="custom-button linkedin">
-                    <span>LinkedIn</span>
-                    <svg class="icon" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 12V6H2.542v6h2.4zm-1.2-7.003c.837 0 1.355-.558 1.355-1.26C5.098 3.062 4.58 2.5 3.743 2.5c-.838 0-1.355.562-1.355 1.237 0 .702.517 1.26 1.355 1.26zm3.713 7.003h2.4V9.33c0-.637.013-1.461.89-1.461.878 0 .898.791.898 1.502V12h2.4V8.895c0-2.223-1.183-3.254-2.764-3.254-1.281 0-1.872.747-2.197 1.268h-.03V6H7.456c.03.747 0 6 0 6z"/>
-                    </svg>
-                </a>
+    
+            <!-- "See More" Button -->
+            <div class="text-center mt-4">
+                <button id="seeMoreBtn" class="btn btn-outline-primary">See More</button>
             </div>
-
-            <!-- GitHub -->
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <a href="https://github.com/keithcsxyz" target="_blank" class="custom-button github">
-                    <span>GitHub</span>
-                    <svg class="icon" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.2 1.87.86 2.33.66.07-.52.28-.86.51-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.38 7.38 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
-            </div>
-
-            <!-- Instagram -->
-            <div class="col-12 col-sm-6 col-md-3 text-center">
-                <a href="https://www.instagram.com/keithcs.xyz" target="_blank" class="custom-button instagram">
-                    <span>Instagram</span>
-                    <svg class="icon" viewBox="0 0 24 24">
-                        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7.75a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5zm0 1.5a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5zm4.75-.5a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/>
-                    </svg>
-                </a>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
+    
+
+
+    <!-- Socials Section -->
+    <section id="socials" class="py-5">
+        <div class="container">
+            <br>
+            <h2 class="text-center mb-4">Socials</h2>
+            <div class="row justify-content-center g-3">  
+                
+                <!-- Facebook -->
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <a href="https://www.facebook.com/rnzrmbln/" target="_blank" class="custom-button facebook">
+                        <span >Facebook</span>
+                        <svg class="icon" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 0 0-1.25 15.93V10.5H5V8h1.75V6.25c0-1.64.98-2.55 2.44-2.55.7 0 1.43.12 1.43.12v1.57h-.81c-.8 0-1.06.49-1.06 1v1.61h1.81l-.29 2.5h-1.52v5.43A8 8 0 0 0 8 0z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <a href="https://ph.linkedin.com/in/keith-renz-d-romblon-3bb400343" target="_blank" class="custom-button linkedin">
+                        <span>LinkedIn</span>
+                        <svg class="icon" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 12V6H2.542v6h2.4zm-1.2-7.003c.837 0 1.355-.558 1.355-1.26C5.098 3.062 4.58 2.5 3.743 2.5c-.838 0-1.355.562-1.355 1.237 0 .702.517 1.26 1.355 1.26zm3.713 7.003h2.4V9.33c0-.637.013-1.461.89-1.461.878 0 .898.791.898 1.502V12h2.4V8.895c0-2.223-1.183-3.254-2.764-3.254-1.281 0-1.872.747-2.197 1.268h-.03V6H7.456c.03.747 0 6 0 6z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- GitHub -->
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <a href="https://github.com/keithcsxyz" target="_blank" class="custom-button github">
+                        <span>GitHub</span>
+                        <svg class="icon" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.2 1.87.86 2.33.66.07-.52.28-.86.51-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.38 7.38 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="col-12 col-sm-6 col-md-3 text-center">
+                    <a href="https://www.instagram.com/keithcs.xyz" target="_blank" class="custom-button instagram">
+                        <span>Instagram</span>
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7.75a4.25 4.25 0 1 1 0 8.5 4.25 4.25 0 0 1 0-8.5zm0 1.5a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5zm4.75-.5a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <br><br><br><br>    <br><br>
     <!-- Contact Section -->
@@ -225,7 +280,7 @@
                         <img src="imgs/gcash-logo.png" alt="GCash QR" class="card-img-top">
                         <div class="card-body d-grid gap-2"> <!-- Make buttons stackable -->
                             <p>Send via GCash</p>
-                            <button class="btn btn-success w-100" onclick="copyToClipboard('09107323578')">
+                            <button id="gcashBtn" onclick="copyToClipboard('09107323578')">
                                 Copy Number
                             </button>
                         </div>
@@ -238,7 +293,7 @@
                         <img src="imgs/maya-logo.png" alt="Maya QR" class="card-img-top">
                         <div class="card-body d-grid gap-2">
                             <p>Send via Maya</p>
-                            <button class="btn btn-info w-100" onclick="copyToClipboard('09610852240')">
+                            <button id="mayaBtn" onclick="copyToClipboard('09610852240')">
                                 Copy Number
                             </button>
                         </div>
@@ -250,9 +305,9 @@
                     <div class="card bg-dark text-light">
                         <img src="imgs/buy-me-a-coffee.webp" alt="Buy Me a Coffee" class="card-img-top">
                         <div class="card-body d-grid gap-2">
-                            <p>Coffee</p>
-                            <button class="btn btn-warning w-100" onclick="window.open('https://buymeacoffee.com/cskeith', '_blank')">
-                                Buy Me a Coffee
+                            <p>Buy Me a Coffee</p>
+                            <button id="coffeeBtn" onclick="window.open('https://buymeacoffee.com/cskeith', '_blank')">
+                                Buy Me
                             </button>
                         </div>
                     </div>
@@ -264,7 +319,7 @@
                         <img src="imgs/paypal-logo.png" alt="PayPal" class="card-img-top">
                         <div class="card-body d-grid gap-2">
                             <p>PayPal</p>
-                            <button class="btn btn-primary w-100" onclick="window.open('https://www.paypal.com/paypalme/keithcsxyz', '_blank')">
+                            <button id="paypalBtn" onclick="window.open('https://www.paypal.com/paypalme/keithcsxyz', '_blank')">
                                 Send Money
                             </button>
                         </div>
