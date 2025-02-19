@@ -177,28 +177,55 @@ so that it is smooth among other more minor things */
             /*navigation bar */
 
 .navbar {
-    padding: 0 0 5px 5px !important; /* Add padding for better spacing */
+    padding: 0 10px !important; /* Add padding for better spacing */
+    height: auto;
     margin: 0;
     font-size: 15px;
 }
 
+.navbar .container {
+    min-height: 50px
+}
+
+
 #name-ko {
     margin-left: 15px; /* Small left margin */
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     color: red;
     text-decoration: none;
+    
+    padding: 0 0;
+}
+.name-ko-end-green {
+    font-size: 40px !important;
 }
 
 .navbar-nav .nav-link {
     margin: 0 10px; /* Space between menu items */
-    font-size: 1rem;
+    font-size: 25px;
     color: #ccc !important;
 }
 
 .navbar-nav .nav-link:hover {
     color: #00ff00 !important; /* Green hover effect */
 }
+
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+    }
+    .navbar-collapse {
+        padding: 10px; /* Add spacing */
+    }
+
+    .navbar-nav .nav-link {
+        text-align: center; /* Center text */
+        padding: 8px 0;
+    }
+}
+
 
 /* color green eith */
 #name-ko .name-ko-end-green {
@@ -208,26 +235,34 @@ so that it is smooth among other more minor things */
 
 
 
+/*projects*/
 
-
-/*hamurger resize for small screens*/
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 5px 10px; /* Reduce padding */
-    }
-    .navbar-brand {
-        font-size: 18px; /* Decrease brand text size */
-    }
-    .navbar-nav .nav-link {
-        font-size: 30px; /* Decrease menu item size */
-        padding: 5px 8px; /* Reduce spacing */
-    }
-    .navbar-toggler {
-        padding: 3px 3px; /* Make toggle button smaller */
-        font-size: 1px;
-    }
+.card .btn-primary {
+    background-color: #417941;
+    border-color: #00ff00;
 }
+
+.card .btn-primary:hover {
+    color: #000000;
+    background-color: #417941;
+    border-color: #00ff00;
+    background-color: #00ff00;
+}
+
+#seeMoreBtn {
+    color: white;
+    background-color: #417941;
+    border-color: #00ff00;
+}
+
+#seeMoreBtn:hover {
+    color: rgb(0, 0, 0);
+    background-color: #00ff00;
+}
+
+
+
+
 
 
 
@@ -383,18 +418,115 @@ footer {
     padding: 10px 15px;
 }
 
-/* Medium screens (tablets) */
-@media (max-width: 992px) {
-    .custom-btn {
-        font-size: 0.875rem; /* Smaller font */
-        padding: 8px 12px; /* Adjust padding */
+
+
+/*donate btn*/
+
+#gcashBtn {
+background-color: #005983;
+color: white;
+border-radius: 20px;
+border: #00ff00 1px solid;
+}
+
+#gcashBtn:hover {
+    background-color: #12bcfe;
+    color: black;
+    border-radius: 20px;
+    border: #12bcfe 2px solid;
+}
+
+#mayaBtn {
+    background-color: rgb(34, 29, 29);
+    border-radius: 20px;
+    color: #44ce7b;
+    border: #44ce7b 1px solid;
+}
+
+#mayaBtn:hover {
+    background-color: #44ce7b;;
+    border-radius: 20px;
+    color: black;
+    border: black 2px solid;
+}
+
+#coffeeBtn {
+    background-color: #fad648;
+    border-radius: 20px;
+    border: #000000 1px solid;
+}
+
+#coffeeBtn:hover {
+    background-color: #ffcc01;
+    border: #000000 2px solid;
+    color: white;
+}
+
+#paypalBtn {
+    border-radius: 20px;
+    background-color: #185774;
+    color: white;
+    border: #000000 1px solid;
+}
+
+#paypalBtn:hover {
+    background-color: #58b3dd;
+    color: #000000;
+    border: #000000 2px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*hamurger resize for small screens*/
+@media (min-width: 769px) and (max-width: 1199px) {
+    .navbar-nav {
+        display: flex;
+        justify-content: center; /* Centers nav links */
+        width: 100%; /* Ensures full width */
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center; /* Centers text inside each item */
     }
 }
 
-/* Small screens (phones) */
-@media (max-width: 576px) {
-    .custom-btn {
-        font-size: 0.75rem; /* Even smaller font */
-        padding: 6px 10px;
+@media (max-width: 768px){
+    .navbar {
+        padding: 5px 10px; /* Reduce padding */
+    }
+    .navbar-brand {
+        font-size: 18px; /* Decrease brand text size */
+    }
+    .navbar-nav .nav-link {
+        font-size: 20px; /* Decrease menu item size */
+        padding: 5px 8px; /* Reduce spacing */
+    }
+    .navbar-toggler {
+        margin-top: 1px;
+        padding: 3px 3px; /* Make toggle button smaller */
+        font-size: 1px;
+    }
+    .navbar-toggler-icon {
+        height: 30px;
+        width: 30px;
+    }
+    #name-ko {
+        font-size: 27px;
+    }
+    .name-ko-end-green {
+        font-size: 26px !important;
     }
 }
+
+
