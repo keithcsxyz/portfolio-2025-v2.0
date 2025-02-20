@@ -176,6 +176,21 @@ so that it is smooth among other more minor things */
 
             /*navigation bar */
 
+.offcanvas {
+    background-color: #1B1F23;
+    opacity: 0.9;
+}
+.offcanvas-title {
+    color: white;
+}
+
+
+.btn-close {
+    filter: invert(1);
+    width: 1px !important;
+    height: 1px !important;
+}
+
 .navbar {
     padding: 0 10px !important; /* Add padding for better spacing */
     height: auto;
@@ -221,8 +236,16 @@ so that it is smooth among other more minor things */
     }
 
     .navbar-nav .nav-link {
-        text-align: center; /* Center text */
         padding: 8px 0;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 50% !important;
+        opacity: 0.8;
+    }
+
+    .offcanvas-title {
+        font-size: 30px;
     }
 }
 
@@ -348,6 +371,14 @@ footer {
     padding: 0;
     margin-top: -90px;
     margin-bottom: -150px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer p span {
+    font-size: 20px;
 }
 
 #msg {
