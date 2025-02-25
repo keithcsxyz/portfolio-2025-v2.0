@@ -506,9 +506,19 @@ border: #00ff00 1px solid;
     border: #000000 2px solid;
 }
 
+.cv-btn a {
+    color: white;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 40px;
+    font-size: 20px;
+    padding: 10px;
+}
 
-
-
+.cv-btn a:hover {
+    color: rgb(244, 52, 52);
+    background-color: rgb(23, 99, 23);
+}
 
 
 
