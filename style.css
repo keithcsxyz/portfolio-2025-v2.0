@@ -1,3 +1,9 @@
+/*
+        MAANO KANA NAMAN DIDI?
+*/
+
+
+
 * {
     font-size: 30px;
 }
@@ -191,6 +197,15 @@ so that it is smooth among other more minor things */
     height: 1px !important;
 }
 
+.navbar-toggler {
+    color: green !important;
+}
+
+.navbar-toggler-icon {
+    height: 20px !important;
+    width: 20px !important;
+}
+
 .navbar {
     padding: 0 10px !important; /* Add padding for better spacing */
     height: auto;
@@ -217,13 +232,21 @@ so that it is smooth among other more minor things */
 }
 
 .navbar-nav .nav-link {
-    margin: 0 10px; /* Space between menu items */
-    font-size: 25px;
-    color: #ccc !important;
+    margin: 0 10px IM !important; /* Space between menu items */
+    font-size: 30px !important;
+    color: #933f3f !important;
 }
 
 .navbar-nav .nav-link:hover {
     color: #00ff00 !important; /* Green hover effect */
+}
+
+.offcanvas-header {
+    margin-top: -20px;
+}
+
+#navbarOffcanvasLabel {
+    font-size: 35px;
 }
 
 
@@ -571,3 +594,6 @@ border: #00ff00 1px solid;
 }
 
 
+@media (min-width: 375px) and (max-width: 667px) {
+
+}
