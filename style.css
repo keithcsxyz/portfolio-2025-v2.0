@@ -44,7 +44,7 @@ body {
 }
 
 .card {
-    border: #00ff00 3px solid;
+    border: red 1px solid;
     background-color: #24292e;
     opacity: 0.5;
     color: white;
@@ -71,7 +71,7 @@ opacity: 0.9;
 		
 .about-details {
 	color: white;
-    border: #00ff00 3px solid;
+    border: red 2px solid;
     border-radius: 60px;
     padding: 4%;
 }
@@ -335,7 +335,7 @@ so that it is smooth among other more minor things */
     font-size: 18px;
     transition: 0.3s;
     position: relative;
-    border: #417941 1px solid; 
+    border: red 1px solid; 
 }
 
 .custom-button .icon {
